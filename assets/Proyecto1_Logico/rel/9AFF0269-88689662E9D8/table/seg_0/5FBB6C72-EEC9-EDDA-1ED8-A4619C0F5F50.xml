@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FBB6C72-EEC9-EDDA-1ED8-A4619C0F5F50" name="CARGO">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>085671C0-D7D0-6986-D1B2-9FACC978845C</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cargo" id="0AF0C99B-CA6B-546D-6F0E-C3AC9088A76D">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>9EC4BED6-DD2A-E482-64DD-9BCA7C0516C8</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo" id="0EA3087C-FE9A-A466-CA48-EF924857CE34">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>2019D2C1-FB5C-5308-6AE2-3978A1AF1CA8</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDEEE7E3-2D6C-491B-C6F9-E207CA116D0D" name="CARGO_PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>0D1C00E7-BC2D-B704-2980-99A4A7E9EA4A</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AF0C99B-CA6B-546D-6F0E-C3AC9088A76D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -86,8 +86,9 @@
 <createdBy>alvaro-laptop</createdBy>
 <createdTime>2023-09-05 20:14:27 UTC</createdTime>
 <ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

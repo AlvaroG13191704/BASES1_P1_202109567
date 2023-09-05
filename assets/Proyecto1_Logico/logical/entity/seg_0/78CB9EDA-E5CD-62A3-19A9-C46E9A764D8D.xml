@@ -43,5 +43,32 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_detalle" id="049E4D1A-24C1-DA40-98D9-FCF3B89570FC">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:44:31 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CD82D1E3-F8E0-467D-C976-16B0D0859490" name="DETALLE_VOTO PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:44:39 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>049E4D1A-24C1-DA40-98D9-FCF3B89570FC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

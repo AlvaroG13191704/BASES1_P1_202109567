@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F32B118-6A7B-C2DA-A84F-A7852E8F03BF" name="CIUDADANO">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>A5EDF0B8-6C6D-1AB6-8C0A-4296DFC1C8A9</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dpi" id="6C9C2F3C-31BB-A65E-7BF0-C1AFC15F7654">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>5C3DDF67-7C58-B14B-9DDF-D8708BA79839</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="362E1E7E-DD6C-BA95-ED0B-DF43450ED02A">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>3239EEB4-5B87-D07D-2206-F247BE2987FB</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="BD0ACFB7-04BF-EE7E-E498-B148F897BC2D">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>08D960A8-23EB-C27A-60FC-44C3F202693B</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="9A3B946F-19C4-C3C7-903A-9225569AB616">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>DEFA09B0-6AE9-1AFA-3A55-829C9313B0FF</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="38DBCE1A-A7A7-D113-D926-9975D5242F9E">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>1A16E1EF-F8DD-E562-70CE-51541B406454</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="00A36234-CEDF-DEAB-CDF4-37FF261067D0">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>9EEE264F-E7E2-BAAA-D1F5-3B53C38E50CD</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20CFB554-17B0-5677-E7D7-8F4E3E44DA7B" name="CIUDADANO_PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>2A27E201-7E25-0CDD-C730-838E8F5F8D61</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C9C2F3C-31BB-A65E-7BF0-C1AFC15F7654"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

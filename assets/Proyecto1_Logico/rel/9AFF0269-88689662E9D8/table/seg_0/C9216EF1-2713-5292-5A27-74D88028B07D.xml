@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9216EF1-2713-5292-5A27-74D88028B07D" name="VOTO">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>DB7C894F-2654-5B53-083D-97F07750CC38</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_voto" id="DD9A4F5F-9244-78D8-2CC0-165DC1E59911">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>3783D76D-3D5D-1667-EB0F-4FD1140AF426</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datetime" id="671CDC80-E5B9-C91E-FE5B-5B3E0829A9C0">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>0764D24B-2E47-5217-6E77-250C2A541D60</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDADANO_dpi" id="86C30B91-19F3-2CB3-921D-39ACEDB2350C">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>CDC260D0-B7E1-432B-3EBE-5CCE84986BB3</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DACE15B-DDF0-D8BA-5FAD-D390F6A62E7E" referredColumn="6C9C2F3C-31BB-A65E-7BF0-C1AFC15F7654"/>
+</associations>
+</Column>
+<Column name="MESA_id_mesa" id="6130B7A7-5D62-D078-4077-5A477D18EA03">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>F04CBB73-1380-4E52-04C7-DEE7CB3A12F9</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4E9D165F-D967-C6F7-9090-222F654CA2B6" referredColumn="7ED7ACDE-B282-7480-8E57-AA88200D600D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2DD5A7E-A4EF-3A10-2F40-7546C54680C5" name="VOTO_PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>09EE5BFF-3BF6-9D81-67FB-49FE0B504728</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD9A4F5F-9244-78D8-2CC0-165DC1E59911"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AF46026-6E8E-C780-52A3-26C4CCD01AEB" name="VOTO_CIUDADANO_FK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>060EB02A-A0A5-3287-A4A8-01B39E7EAD71</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86C30B91-19F3-2CB3-921D-39ACEDB2350C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94C9320F-FC4B-7628-DEC5-A00B2CAEBFB1" name="VOTO_MESA_FK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>4C6BDF7E-1587-84B2-32BE-5D896474916B</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6130B7A7-5D62-D078-4077-5A477D18EA03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

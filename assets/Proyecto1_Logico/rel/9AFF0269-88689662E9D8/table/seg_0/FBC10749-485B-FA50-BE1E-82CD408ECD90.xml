@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBC10749-485B-FA50-BE1E-82CD408ECD90" name="MESA">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>EF173080-42B0-D985-EEFC-672E4C94937F</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_mesa" id="7ED7ACDE-B282-7480-8E57-AA88200D600D">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>87B7EC54-51EA-8589-FB6A-4CEDCA7970E1</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTO_id_departamento" id="EBC5773C-5E7D-A89A-BFDA-563F8E4CCE75">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>689EED26-57F6-6C0A-5B9A-8A3F0FCF81D5</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77C3BAF6-029D-19FC-5839-2EDE4988EADD" referredColumn="6D6B5C6E-FF2B-6B13-9F0E-992CEE8A7D30"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4061F45A-858E-3B0D-043F-CEB6E6EB1A88" name="MESA_PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>6504FDC1-4FB5-6548-272D-14D7175D4A46</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7ED7ACDE-B282-7480-8E57-AA88200D600D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC8395FD-2EEF-D112-4062-72C0934480E0" name="MESA_DEPARTAMENTO_FK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>358941D4-612E-EF7F-160D-D56B138838AF</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBC5773C-5E7D-A89A-BFDA-563F8E4CCE75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

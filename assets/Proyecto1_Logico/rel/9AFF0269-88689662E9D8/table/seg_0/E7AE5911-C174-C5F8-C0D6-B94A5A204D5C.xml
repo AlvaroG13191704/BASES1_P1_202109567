@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7AE5911-C174-C5F8-C0D6-B94A5A204D5C" name="CANDIDATO">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>06382A1E-5A23-7496-91E4-720E6580A0AD</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_candidato" id="1C169A1D-9AE9-80A6-2993-6BE55EE9A196">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>8C6D4D64-E70C-2BEC-5E42-6CA8969B8EB7</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombres" id="3DFB2DAE-2368-4098-52C4-392E0CD1AD02">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>BD92E968-3B16-0B7D-9BA4-AFFB96A5400C</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="E0BCBD98-EA06-07FB-F1BA-60C187F979AE">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>69A6D78E-FEE4-D652-6038-59ABC387D0F1</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARTIDO_id_partido" id="3C894204-C9E8-4894-081D-748A8904DBCF">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>6767E4E0-6F1A-0F01-779F-6EFC744599CA</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98D09A35-7CC1-E158-324A-24F988F4E7C0" referredColumn="0C303137-DD35-61A9-051D-854F5A002C1D"/>
+</associations>
+</Column>
+<Column name="CARGO_id_cargo" id="27C3D637-D130-41BD-0400-4E41BC15EAF2">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>8B0DC331-3B4C-52AE-68D9-C00CD086D08B</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26C2BA83-7076-AE0E-7614-05C02650B6C5" referredColumn="0AF0C99B-CA6B-546D-6F0E-C3AC9088A76D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37BE7B16-0978-9D0C-F4AA-E25452D91014" name="CANDIDATO_PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>E6DD7D63-D3B0-0BE7-23C0-AE921040E07D</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C169A1D-9AE9-80A6-2993-6BE55EE9A196"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F928F99-F21B-021B-868B-972A2F73DAB2" name="CANDIDATO_CARGO_FK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>7E21E33B-38BC-978F-55EB-DEE298C270E7</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27C3D637-D130-41BD-0400-4E41BC15EAF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="368C6BC7-582D-11FE-5AAB-3DDA70818F2E" name="CANDIDATO_PARTIDO_FK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>93FFEACE-1914-6430-8CE1-355B1C1F7D7D</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C894204-C9E8-4894-081D-748A8904DBCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

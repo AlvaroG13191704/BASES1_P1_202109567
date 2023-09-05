@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="740A6577-1F6B-87C0-CA15-5EDFA2B8D7F4" name="DETALLE_VOTO">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>78CB9EDA-E5CD-62A3-19A9-C46E9A764D8D</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VOTO_id_voto" id="6B48F6BD-A287-6C79-A0CA-EFA0B219D0B4">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>0D9883B6-BB9E-FB66-26E9-46EDCCDB5638</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="873D01AB-C5FF-E0BF-9704-3183AE9043B7" referredColumn="DD9A4F5F-9244-78D8-2CC0-165DC1E59911"/>
+</associations>
+</Column>
+<Column name="CANDIDATO_id_candidato" id="0C74A6B0-0E67-1906-641E-20C660AEA251">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>AEB651A6-2774-A7B9-2794-2AD986EB9A71</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E23DF9EB-235A-412E-B1ED-F435D98491AC" referredColumn="1C169A1D-9AE9-80A6-2993-6BE55EE9A196"/>
+</associations>
+</Column>
+<Column name="id_detalle" id="3F8E00DC-B86D-53F2-D53A-1F90B65B1E63">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:44:51 UTC</createdTime>
+<generatorID>049E4D1A-24C1-DA40-98D9-FCF3B89570FC</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E234EABC-BC5B-33D4-2A16-2DD67299BC0D" name="DETALLE_VOTO_PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:44:51 UTC</createdTime>
+<generatorID>CD82D1E3-F8E0-467D-C976-16B0D0859490</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F8E00DC-B86D-53F2-D53A-1F90B65B1E63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="900E3880-1856-925B-01A4-179D02476B78" name="DETALLE_VOTO_CANDIDATO_FK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>D1E25DCA-A1A7-7A4F-D7DE-ADE1FCE82928</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C74A6B0-0E67-1906-641E-20C660AEA251"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FB29ABB-6CF7-5377-BD6A-87E87D5F98B4" name="DETALLE_VOTO_VOTO_FK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>10BDD3FB-3A51-F027-3CEB-F3100E4CD562</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B48F6BD-A287-6C79-A0CA-EFA0B219D0B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

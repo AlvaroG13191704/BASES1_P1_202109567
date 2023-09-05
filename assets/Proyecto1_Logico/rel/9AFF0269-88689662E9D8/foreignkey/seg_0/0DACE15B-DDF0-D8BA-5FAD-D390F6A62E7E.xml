@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0DACE15B-DDF0-D8BA-5FAD-D390F6A62E7E" containerWithKeyObject="C9216EF1-2713-5292-5A27-74D88028B07D" localFKIndex="5AF46026-6E8E-C780-52A3-26C4CCD01AEB" name="VOTO_CIUDADANO_FK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:41:03 UTC</createdTime>
+<generatorID>060EB02A-A0A5-3287-A4A8-01B39E7EAD71</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<referredTableLongName>CIUDADANO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0F32B118-6A7B-C2DA-A84F-A7852E8F03BF</referredTableID>
+<keyObject>20CFB554-17B0-5677-E7D7-8F4E3E44DA7B</keyObject>
+<referredKeyID>20CFB554-17B0-5677-E7D7-8F4E3E44DA7B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>dpi</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
