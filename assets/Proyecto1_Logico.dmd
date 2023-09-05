@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Proyecto1_Logico" id="1EFCB1FD-777F-33B2-B296-AD640F5C78F0" version="3.5">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 18:12:56 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1EFCB1FD-777F-33B2-B296-AD640F5C78F0</designId>
+</OSDM_Design>

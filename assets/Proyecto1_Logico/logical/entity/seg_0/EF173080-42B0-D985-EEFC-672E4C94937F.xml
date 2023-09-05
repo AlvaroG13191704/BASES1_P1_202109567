@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EF173080-42B0-D985-EEFC-672E4C94937F" name="MESA">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 18:18:58 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_mesa" id="87B7EC54-51EA-8589-FB6A-4CEDCA7970E1">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:09:46 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_departamento" id="689EED26-57F6-6C0A-5B9A-8A3F0FCF81D5">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:27:54 UTC</createdTime>
+<generatorID>358941D4-612E-EF7F-160D-D56B138838AF</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<referedAttribute>7015AC90-8E7D-3E79-9D5D-A7FEFE595F7A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6504FDC1-4FB5-6548-272D-14D7175D4A46" name="MESA PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:09:59 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87B7EC54-51EA-8589-FB6A-4CEDCA7970E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

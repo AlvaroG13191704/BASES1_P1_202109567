@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB7C894F-2654-5B53-083D-97F07750CC38" name="VOTO">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 18:19:25 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_voto" id="3783D76D-3D5D-1667-EB0F-4FD1140AF426">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:17:44 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datetime" id="0764D24B-2E47-5217-6E77-250C2A541D60">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:18:01 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dpi" id="CDC260D0-B7E1-432B-3EBE-5CCE84986BB3">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:23:35 UTC</createdTime>
+<generatorID>060EB02A-A0A5-3287-A4A8-01B39E7EAD71</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<referedAttribute>5C3DDF67-7C58-B14B-9DDF-D8708BA79839</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_mesa" id="F04CBB73-1380-4E52-04C7-DEE7CB3A12F9">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:26:23 UTC</createdTime>
+<generatorID>4C6BDF7E-1587-84B2-32BE-5D896474916B</generatorID>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<referedAttribute>87B7EC54-51EA-8589-FB6A-4CEDCA7970E1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="09EE5BFF-3BF6-9D81-67FB-49FE0B504728" name="VOTO PK">
+<createdBy>alvaro-laptop</createdBy>
+<createdTime>2023-09-05 20:17:57 UTC</createdTime>
+<ownerDesignName>Proyecto1_Logico</ownerDesignName>
+<engineerTo>
+<item key="9AFF0269-085A-3CB8-4B1F-88689662E9D8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3783D76D-3D5D-1667-EB0F-4FD1140AF426</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
