@@ -1,5 +1,8 @@
 ### Workflow
 
+* repository -> https://github.com/edinfusion/LAB_BD1_2S2023/tree/main/CLASES/CLASE%206
+
+
 * Creation of the models
 - [x] Create concept model -> using excalidraw
 - [x] Normalize data -> using excel
@@ -7,5 +10,9 @@
 - [x] Create physical model -> using data modeler
 
 * Creation of the database 
-* repository -> https://github.com/edinfusion/LAB_BD1_2S2023/tree/main/CLASES/CLASE%206
-  
+- [x] Install MYSQL and Datagrip
+- [x] Create database
+- [x] Create the tables with the respective relationships and attributes
+
+* Create the enviroment of work -> use nest js
+- [] Create the project  

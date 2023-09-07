@@ -5,3 +5,9 @@
 ## Start project
 
 ## Start docker image of mysql
+```shell
+# command to run the docker image of mysql
+docker run --name mysql-server -p 3306:3306 -e MYSQL_ROOT_PASSWORD=admin -d mysql
+# start the docker image of mysql
+docker start mysql-server
+```
