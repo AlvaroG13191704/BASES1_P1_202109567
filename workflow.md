@@ -20,3 +20,15 @@
 * Start wroking with endpoints
   - [x] Create tables of the model -> /crearmodelo METHOD: GET
   - [x] Delete tables of the model -> /eliminarmodelo METHOD: GET
+  - [x] Load data to the tables -> /cargartabtemp METHOD: GET
+  - [x] Create query 1
+  - [x] Create query 2
+  - [ ] Create query 3
+  - [ ] Create query 4
+  - [ ] Create query 5
+  - [ ] Create query 6
+  - [ ] Create query 7
+  - [ ] Create query 8
+  - [ ] Create query 9
+  - [ ] Create query 10
+  - [ ] Create query 11

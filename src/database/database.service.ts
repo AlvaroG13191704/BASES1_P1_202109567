@@ -100,5 +100,27 @@ export class DatabaseService {
   }
 
   
+  async queries( query: string ) {
+    const queryRunner = this.dataSource.createQueryRunner();
 
+    await queryRunner.connect();
+    await queryRunner.startTransaction();
+
+    try {
+      const result = await queryRunner.query(query);
+      await queryRunner.commitTransaction();  
+      console.log('Query 1');
+      return result;
+
+    } catch (error) {
+      // since we have errors lets rollback the changes we made
+      await queryRunner.rollbackTransaction();
+      console.log(error);
+      return error;
+
+    } finally {
+      // you need to release a queryRunner which was manually instantiated
+      await queryRunner.release();
+    }
+  }
 }

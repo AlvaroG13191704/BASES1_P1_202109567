@@ -34,4 +34,14 @@ export class AppController {
 
     return 'data added to temp tables';
   }
+
+  @Get('/consulta1')
+  query1() {
+    return this.appService.query1();
+  }
+
+  @Get('/consulta2')
+  query2() {
+    return this.appService.query2();
+  }
 }
