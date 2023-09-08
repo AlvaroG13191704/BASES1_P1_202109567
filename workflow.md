@@ -15,4 +15,8 @@
 - [x] Create the tables with the respective relationships and attributes
 
 * Create the enviroment of work -> use nest js
-- [] Create the project  
+- [x] Create the project
+
+* Start wroking with endpoints
+  - [x] Create tables of the model -> /crearmodelo METHOD: GET
+  - [x] Delete tables of the model -> /eliminarmodelo METHOD: GET
