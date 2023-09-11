@@ -23,12 +23,16 @@
   - [x] Load data to the tables -> /cargartabtemp METHOD: GET
   - [x] Create query 1
   - [x] Create query 2
-  - [ ] Create query 3
-  - [ ] Create query 4
-  - [ ] Create query 5
-  - [ ] Create query 6
-  - [ ] Create query 7
-  - [ ] Create query 8
-  - [ ] Create query 9
-  - [ ] Create query 10
-  - [ ] Create query 11
+  - [x] Create query 3
+  - [x] Create query 4
+  - [x] Create query 5
+  - [x] Create query 6
+  - [x] Create query 7
+  - [x] Create query 8
+  - [x] Create query 9
+  - [x] Create query 10
+  - [x] Create query 11
+
+* Create documentation
+  - [ ] Create the script .sql
+  - [ ] Create the tech manual

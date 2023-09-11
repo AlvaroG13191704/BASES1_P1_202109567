@@ -109,7 +109,7 @@ export class DatabaseService {
     try {
       const result = await queryRunner.query(query);
       await queryRunner.commitTransaction();  
-      console.log('Query 1');
+      console.log('Query executed');
       return result;
 
     } catch (error) {

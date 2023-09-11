@@ -44,4 +44,49 @@ export class AppController {
   query2() {
     return this.appService.query2();
   }
+
+  @Get('/consulta3')
+  query3() {
+    return this.appService.query3();
+  }
+
+  @Get('/consulta4')
+  query4() {
+    return this.appService.query4();
+  }
+
+  @Get('/consulta5')
+  query5() {
+    return this.appService.query5();
+  }
+
+  @Get('/consulta6')
+  query6() {
+    return this.appService.query6();
+  }
+
+  @Get('/consulta7')
+  query7() {
+    return this.appService.query7();
+  }
+
+  @Get('/consulta8')
+  query8() {
+    return this.appService.query8();
+  }
+
+  @Get('/consulta9')
+  query9() {
+    return this.appService.query9();
+  }
+
+  @Get('/consulta10')
+  query10() {
+    return this.appService.query10();
+  }
+
+  @Get('/consulta11')
+  query11() {
+    return this.appService.query11();
+  }
 }

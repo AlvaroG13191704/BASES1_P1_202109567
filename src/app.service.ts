@@ -143,12 +143,12 @@ export class AppService {
       const gender = line[6];
 
       if (dpi && name && lastname && address && phone && age && gender) {
-        const temQuery = `INSERT INTO TEMCIUDADANO(dpi, nombre, apellido, direccion, telefono, genero) VALUES ('${dpi}','${name}','${lastname}','${address}','${phone}','${gender}') `;
+        const temQuery = `INSERT INTO TEMCIUDADANO(dpi, nombre, apellido, direccion, telefono,edad, genero) VALUES ('${dpi}','${name}','${lastname}','${address}','${phone}',${age},'${gender}') `;
         listTemQueries.push(temQuery);
       }
 
     }
-    finalQuery = `INSERT INTO CIUDADANO(dpi, nombre, apellido, direccion, telefono, genero) SELECT dpi, nombre, apellido, direccion, telefono, genero FROM TEMCIUDADANO;`;
+    finalQuery = `INSERT INTO CIUDADANO(dpi, nombre, apellido, direccion, telefono,edad, genero) SELECT dpi, nombre, apellido, direccion, telefono,edad, genero FROM TEMCIUDADANO;`;
     await this.database.loadDataDB(listTemQueries, finalQuery); 
     console.log('Ciudadanos loaded');
 
@@ -239,12 +239,162 @@ export class AppService {
   async query2(){
     return this.database.queries(`
     SELECT
-        P.nombre_partido AS partido,
-        SUM(CASE WHEN C.id_cargo IN (1, 2, 3) THEN 1 ELSE 0 END) AS diputados
-    FROM PARTIDO P
-    LEFT JOIN CANDIDATO C ON P.id_partido = C.id_partido
-    GROUP BY P.nombre_partido;
+      P.nombre_partido AS Partido,
+      COUNT(C.id_candidato) AS 'Cantidad de diputados'
+    FROM
+        PARTIDO P
+    LEFT JOIN
+        CANDIDATO C ON P.id_partido = C.id_partido
+    LEFT JOIN
+        CARGO CG ON C.id_cargo = CG.id_cargo
+    WHERE
+        CG.id_cargo = 3 OR CG.id_cargo = 4 OR CG.id_cargo = 5
+    GROUP BY
+        P.nombre_partido;
+    `);
+  }
+
+  async query3(){
+    return this.database.queries(`
+    SELECT
+      P.nombre_partido AS Partido,
+      C.nombres AS Alcalde
+    FROM
+        PARTIDO P
+    LEFT JOIN
+        CANDIDATO C ON P.id_partido = C.id_partido
+    LEFT JOIN
+        CARGO CG ON C.id_cargo = CG.id_cargo
+    WHERE
+        CG.id_cargo = 6;
+    `);
+  }
+
+  async query4(){
+    return this.database.queries(`
+    SELECT
+      P.nombre_partido AS Partido,
+      COUNT(C.id_candidato) AS Candidatos
+    FROM
+        PARTIDO P
+    LEFT JOIN
+        CANDIDATO C ON P.id_partido = C.id_partido
+    LEFT JOIN
+        CARGO CG ON C.id_cargo = CG.id_cargo
+    WHERE
+        CG.id_cargo IN (1,2,3,4,5,6)
+    GROUP BY
+        P.nombre_partido;
+    `);
+  }
+
+  async query5(){
+    return this.database.queries(`
+    SELECT
+      D.nombre AS Departamento,
+      COUNT(V.id_voto) AS Votos
+    FROM
+        DEPARTAMENTO D
+    LEFT JOIN
+        MESA M ON D.id_departamento = M.id_departamento
+    LEFT JOIN
+        VOTO V ON M.id_mesa = V.id_mesa
+    GROUP BY
+        D.nombre;
+    `);
+  }
+
+  async query6(){
+    return this.database.queries(`
+    SELECT
+      COUNT(*) AS 'Votos nulos'
+    FROM
+        DETALLE_VOTO DV
+    WHERE
+        DV.id_candidato = -1;
     `);
   }
   
+  async query7(){
+    return this.database.queries(`
+    SELECT C.edad AS Edad,
+      COUNT(V.id_voto) AS Cantidad
+    FROM CIUDADANO C
+    LEFT JOIN
+      VOTO V on C.dpi = V.dpi
+    GROUP BY
+      C.edad
+    ORDER BY
+      Cantidad DESC
+    LIMIT 10;
+    `);
+  }
+
+  async query8(){
+    return this.database.queries(`
+    SELECT
+      CONCAT(Presi.nombres, ' (Presidente)') AS Candidato,
+      COUNT(*) AS Cantidad_Votos
+    FROM
+        DETALLE_VOTO DV
+    INNER JOIN
+        CANDIDATO Presi ON DV.id_candidato = Presi.id_candidato
+    INNER JOIN
+        CANDIDATO Vp ON Presi.id_partido = Vp.id_partido AND Vp.id_cargo = 2
+    WHERE
+        Presi.id_cargo = 1
+    GROUP BY
+        Candidato
+    ORDER BY
+        Cantidad_Votos DESC
+    LIMIT 10;
+    `);
+  }
+
+  async query9(){
+    return this.database.queries(`
+    SELECT
+      M.id_mesa AS Mesa,
+      D.nombre AS Departamento,
+      COUNT(*) AS Votos
+    FROM MESA M
+    INNER JOIN DEPARTAMENTO D on M.id_departamento = D.id_departamento
+    INNER JOIN VOTO V on M.id_mesa = V.id_mesa
+    GROUP BY M.id_mesa, D.nombre
+    ORDER BY Votos DESC
+    LIMIT 5;
+    `);
+  }
+
+  async query10(){
+    return this.database.queries(`
+    SELECT
+      HOUR(datetime) AS Hora,
+      COUNT(*) AS Cantidad_Votantes
+    FROM
+        VOTO
+    GROUP BY
+        Hora
+    ORDER BY
+        Cantidad_Votantes DESC
+    LIMIT 5;
+    `);
+  }
+
+  async query11(){
+    return this.database.queries(`
+    SELECT
+      CASE
+          WHEN genero = 'F' THEN 'Femenino'
+          WHEN genero = 'M' THEN 'Masculino'
+      END AS Genero,
+      COUNT(*) AS Cantidad_Votos
+    FROM
+        CIUDADANO C
+    INNER JOIN
+        VOTO V ON C.dpi = V.dpi
+    GROUP BY
+        genero;
+    `);
+  }
 }

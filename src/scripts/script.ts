@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS CIUDADANO (
     apellido VARCHAR(50) NOT NULL,
     direccion VARCHAR(50) NOT NULL ,
     telefono VARCHAR(10) NOT NULL,
+    edad INTEGER NOT NULL,
     genero VARCHAR(1) NOT NULL,
     PRIMARY KEY (dpi)
 );
@@ -115,7 +116,8 @@ CREATE TEMPORARY TABLE TEMCIUDADANO(
     apellido VARCHAR(50) NOT NULL,
     direccion VARCHAR(50) NOT NULL ,
     telefono VARCHAR(10) NOT NULL,
-    genero VARCHAR(1) NOT NULL
+    genero VARCHAR(1) NOT NULL,
+    edad INTEGER NOT NULL
 );
 
 -- TABLE OF TEMCARGO
