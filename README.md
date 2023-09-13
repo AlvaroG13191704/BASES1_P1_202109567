@@ -6,27 +6,29 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
 
+# Proyecto 1 - Bases de Datos 1
 
-# BASES1_P1_202109567
-# Alvaro Norberto García Meza
-# Carné -> 202109567
+# Estudiante: Alvaro Norberto García Meza
+# Carné: 202109567
+
+### [Manual Técnico](/docs/manual.md)
 
 ## Start project
 
 ## Start docker image of mysql
 ```
 # command to run the docker image of mysql
-docker run --name mysql-server -p 3306:3306 -e MYSQL_ROOT_PASSWORD=admin -d mysql
+$ docker run --name mysql-server -p 3306:3306 -e MYSQL_ROOT_PASSWORD=admin -d mysql
 # start the docker image of mysql
-docker start mysql-server
+$ docker start mysql-server
 ```
 
 ## Give access
 ```
-docker exec -it <CONTAINER_ID>  mysql -uroot -p
-CREATE USER 'nilu'@'172.17.0.1' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO 'nilu'@'172.17.0.1' WITH GRANT OPTION;
-flush privileges;
-exit 
+$ docker exec -it <CONTAINER_ID>  mysql -uroot -p
+mysql> CREATE USER 'nilu'@'172.17.0.1' IDENTIFIED BY 'password';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'nilu'@'172.17.0.1' WITH GRANT OPTION;
+mysql> flush privileges;
+mysql> exit 
 ```
 

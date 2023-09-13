@@ -369,7 +369,7 @@ export class AppService {
   async query10(){
     return this.database.queries(`
     SELECT
-      HOUR(datetime) AS Hora,
+      DATE_FORMAT(datetime, '%H:%i') AS Hora,
       COUNT(*) AS Cantidad_Votantes
     FROM
         VOTO
