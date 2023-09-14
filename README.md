@@ -32,3 +32,7 @@ mysql> flush privileges;
 mysql> exit 
 ```
 
+## Postman
+```
+https://api.postman.com/collections/20330284-3d109ff2-bda6-4536-9e30-9bac98b7a0dc?access_key=PMAT-01HAA8W7W5JXJD7FNNKA1XQZ7P
+```
